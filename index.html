@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>schoolfamily</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>schoolfamily</h1>
+    </header>
+    <main>
+        <h2>Welcome to schoolfamily</h2>
+        <p class="parrafo">Aca podes guardar tus materias y calcular tu promedio!!</p>
+        <div class="container">
+            <form class="container-form">
+                <p>Ingresa tus Datos:</p>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Ej: pablo pintos">
+                <label for="materia">Materia:</label>
+                <select id="option" name="option">
+                    <option value="1">Literatura</option>
+                    <option value="2">Matematica</option>
+                    <option value="3">Quimica</option>
+                    <option value="4">Biologia</option>
+                    <option value="5">Geografia</option>
+                    <option value="6">Ingles</option>
+                </select>
+            </form>
+
+            <div class="calcular">
+                <p>Ingresa las Notas:</p>
+                
+                <div id="inputs">
+                    <label for="number">1º trimestre:</label>
+                    <input type="number" class="nota" min="1" max="10" step="0.1"><br>
+                    <label for="number">2º trimestre:</label>
+                    <input type="number" class="nota" min="1" max="10" step="0.1"><br>
+                    <label for="number">3º trimestre:</label>
+                    <input type="number" class="nota" min="1" max="10" step="0.1">
+                </div><br>
+                <button>Inscribirse</button>
+            </div>
+        </div>
+        <div class="prueba2">
+            <p>Aca veras los datos antes de guardar:</p>
+            <div id="data"></div>
+            <button>Guardar</button>
+        </div>
+
+        <section class="historial-section">
+            <div>
+            <button id="btn-historial">historial</button>
+            </div>
+            <div id="historial">
+            </div>
+        </section>
+
+    </main>
+    <br>
+    <footer>
+        <p class="parrafo">© Derechos Reservados Jorge Estrada 2025</p>
+    </footer>
+</body>
+</html>

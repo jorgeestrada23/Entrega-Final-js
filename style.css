@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+     display: grid;
+     min-height: 100dvh;
+     grid-template-rows: auto 1fr auto;
+}
+
+header{
+    text-align: center;
+    background-color: rgb(255, 151, 90);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+/* styles de main */
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+}
+p{
+    text-align: start;
+}
+
+/* inicio styles del formulario */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding: 4vh;
+}
+
+.container-form{
+    margin: 10px;
+    background-color: rgb(197, 197, 197);
+    border-radius: 10px;
+    padding: 4vh;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-right: 10px;
+    padding: 10px;
+}
+input{
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+select{
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+button{
+    background-color: rgb(253, 164, 112);
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+}   
+button:hover{
+    background-color: rgb(240, 128, 101);
+}
+/* fin de style del formulario */
+
+/* inicio de style del calculadora */
+.calcular{
+    margin: 10px;
+    background-color: rgb(197, 197, 197);
+    border-radius: 10px;
+    padding: 4vh;
+    font-size: 25px;
+    text-align: center;
+}
+/* fin de style del calculadora */
+.prueba2{
+    display: grid;
+    grid-template-rows: 1fr;
+    margin: 5vh;
+    background-color: rgb(197, 197, 197);
+    border-radius: 10px;
+    padding: 2vh;
+    font-size: 25px;
+    p{
+        text-align: start
+    }
+}
+
+.historial-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: start;
+    background-color: rgb(197, 197, 197);
+    border-radius: 10px;
+    padding: 2vh;
+    margin: 5vh;
+    font-size: 25px;
+}
+.parrafo{
+    text-align: center;
+}
+footer{
+    padding: 10px;
+    background-color: rgb(253, 164, 112);
+    font-size: 20px;
+    border-radius: 10px;
+}
