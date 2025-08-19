@@ -31,7 +31,7 @@ inscribirseBtn.addEventListener("click", () => {
     const materia = materias[subjectSelect.value];
     const notas = Array.from(notasInputs).map(input => parseFloat(input.value)).filter(n => !isNaN(n));
 
-    if (!nombre || notas.length < 0) {
+    if (!nombre || notas.length < 2) {
         Swal.fire({
             title: 'Incompleto',
             text: 'Por favor, completa todos los campos',
@@ -55,8 +55,6 @@ inscribirseBtn.addEventListener("click", () => {
         <p><strong>Notas:</strong> ${notas.join(", ")}</p>
         <p><strong>Promedio:</strong> ${promedio}</p>
     `;
-
-    
 });
 
 // Botón Guardar
