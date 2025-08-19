@@ -31,7 +31,14 @@ inscribirseBtn.addEventListener("click", () => {
     const materia = materias[subjectSelect.value];
     const notas = Array.from(notasInputs).map(input => parseFloat(input.value)).filter(n => !isNaN(n));
 
-    
+    if (!nombre || notas.length < 0) {
+        Swal.fire({
+            title: 'Incompleto',
+            text: 'Por favor, completa todos los campos',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+        });
+    }
 
     const promedio = calcularPromedio(notas);
 
@@ -49,14 +56,7 @@ inscribirseBtn.addEventListener("click", () => {
         <p><strong>Promedio:</strong> ${promedio}</p>
     `;
 
-    if (!nombre || materia || notas.length < 0) {
-        Swal.fire({
-            title: 'Incompleto',
-            text: 'Por favor, completa todos los campos',
-            icon: 'error',
-            confirmButtonText: 'Aceptar',
-        });
-    }
+    
 });
 
 // Botón Guardar
